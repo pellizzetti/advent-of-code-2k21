@@ -1,7 +1,7 @@
 use std::fs::File;
-use std::io::{BufRead, BufReader};
+use std::io::{BufRead, BufReader, Result};
 
-fn main() -> std::io::Result<()> {
+fn main() -> Result<()> {
     const FILENAME: &str = "input";
 
     let file = File::open(FILENAME)?;
